@@ -38,3 +38,5 @@ Comprendre le rôle de XSLT dans la transformation de documents XML, explorer le
 
 ##  XQuery  
 *(À compléter selon le contenu prévu)*
+
+Formation assurée grâce à Biblissima+ (ANR-21-ESRE-0005) avec le soutien de l’ENS de Lyon et du CIHAM.

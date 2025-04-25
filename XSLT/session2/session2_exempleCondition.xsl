@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:math="http://www.w3.org/2005/xpath-functions/math"
+    xmlns:tei="http://www.tei-c.org/ns/1.0" xpath-default-namespace="http://www.tei-c.org/ns/1.0"
+    exclude-result-prefixes="xs math"
+    version="3.0">
+   
+   <xsl:output method="html" indent="yes" encoding="UTF-8"/>
+
+        
+        <!-- Template racine -->
+        <xsl:template match="/">
+            <html>
+                <head>
+                    <title>Édition HTML de la pièce</title>
+                    <meta charset="UTF-8"/>
+                </head>
+                <body>
+                    <h1><xsl:value-of select="//title"/></h1>
+                    <!-- Section personnages -->
+                    <section id="dramatis-personae">
+                        <h2>Personnages</h2>
+                        <ul>
+                            <xsl:apply-templates select="//speaker" mode="liste-personnages"/>
+                        </ul>
+                    </section>
+                    
+                    <!-- Section texte -->
+                    <section id="scene">
+                        <h2>Scène</h2>
+                        <xsl:apply-templates select="//sp"/>
+                    </section>
+                </body>
+            </html>
+        </xsl:template>
+        
+        <!-- Liste des personnages -->
+    <xsl:template match="speaker" mode="liste-personnages">
+        <li><xsl:value-of select="."/></li>
+    </xsl:template>
+        
+        <!-- Répliques -->
+        <xsl:template match="sp">
+            <div class="speech">
+                <xsl:attribute name="data-speaker"><xsl:value-of select="speaker"/></xsl:attribute>
+                
+                <p>
+                    <xsl:apply-templates/>
+                </p>
+                
+            </div>
+        </xsl:template>
+    
+    <xsl:template match="speaker" mode="#default">
+        <strong><xsl:apply-templates/>:</strong>
+    </xsl:template>
+        
+        <!-- Didascalies -->
+        <xsl:template match="stage">
+            <p class="stage-direction">
+                <em><xsl:apply-templates/></em>
+            </p>
+        </xsl:template>
+        
+    
+        
+        
+        <!-- Noms de personnes -->
+        <xsl:template match="persName">
+            <span class="persName">
+                <xsl:apply-templates/>
+            </span>
+        </xsl:template>
+        
+        <!-- Noms de lieux -->
+        <xsl:template match="placeName">
+            <span class="placeName">
+                <xsl:apply-templates/>
+            </span>
+        </xsl:template>
+        
+        <!-- Variantes -->
+        <xsl:template match="app">
+            <!-- Exemple de condition -->
+            <!--  <xsl:if test="lem">
+                <strong><xsl:value-of select="lem"/></strong>
+            </xsl:if> -->
+            <xsl:choose>
+                <xsl:when test="./lem">
+                    <strong><xsl:value-of select="lem"/></strong>
+                </xsl:when>
+                <xsl:otherwise>(<xsl:value-of select="rdg/@wit"/>: <em><xsl:value-of select="rdg"/></em>)</xsl:otherwise>
+            </xsl:choose>
+            
+   </xsl:template>
+
+   
+</xsl:stylesheet>

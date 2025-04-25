@@ -19,14 +19,15 @@ Ce dépôt est organisé par langage, avec un dossier dédié à chacun, structu
 Dans chaque dossier, vous trouverez  :
 - Les supports de présentation  
 - Les fichiers XML de départ  
-- Les scripts ou feuilles de transformation  
+- Les scripts, feuilles de transformation ou carnets jupyter  
 - Les exercices et leurs corrigés
 
 ---
 ---
 
 ##  Python  
-*(À compléter selon le contenu prévu)*
+**Objectif général :**  
+Comprendre l'utilisation de la librairie python-lxml. Identifier les cas où python est plus efficace pour le traitement de sources XML que les autres langages.  
 
 ## XSLT
 

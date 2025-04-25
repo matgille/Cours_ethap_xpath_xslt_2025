@@ -1,0 +1,188 @@
+\documentclass[11pt,aspectratio=169]{beamer}
+\usetheme{CambridgeUS}
+\beamertemplatenavigationsymbolsempty
+\usepackage{fontspec}
+\setsansfont{Junicode}
+\usepackage{amsmath,mathtools}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{xpatch}
+\usepackage[export]{adjustbox}
+\usepackage{pgfplots}
+\usepackage{tikz}
+\usetikzlibrary{shapes,calc,matrix,decorations.markings,decorations.pathreplacing,positioning, intersections,backgrounds,through,hobby}
+\usepackage{csquotes}
+\usepackage[french]{babel}
+\date[2 octobre 2023]{2 octobre 2023}
+\author[Matthias \textsc{Gille Levenson}]{\\~\\ Matthias \textsc{Gille Levenson}\\   {\scriptsize AMU -- CIHAM UMR 5648}\\ {\tiny prénom [point] gille [point] levenson [at] ens-lyon.fr}\vspace{-1cm}}
+\title[Transcription automatisée et HTR]{Python pour le traitement des sources XML}
+\titlegraphic{\includegraphics[scale=0.23]{/home/mgl/Bureau/Travail/admin/logos/logo-ciham.png}}
+
+
+%\usepackage[labelformat=empty]{caption}
+\setbeamertemplate{caption}{\insertcaption\par}
+
+\usepackage[datamodel=thesis,citestyle=authoryear,isbn=true,
+doi=true,backend=biber,language=french,url=true,sorting=nty,maxnames=6, maxcitenames=4]{biblatex}
+\renewbibmacro{in:}{}
+\renewcommand*{\bibfont}{\tiny} 
+% http://mcclinews.free.fr/latex/introbeamer/elements_contenu.html
+%\xapptobibmacro{cite}{\setunit{\nametitledelim}\printfield{year}}{}{}
+\addbibresource{biblio.bib}
+
+\begin{filecontents*}{thesis.dbx}
+\ProvidesFile{thesis.dbx}[2014/06/14 supervisor for theses]
+\RequireBiber[3]
+\DeclareDatamodelFields[type=list,datatype=name]{supervisor}
+\DeclareDatamodelEntryfields[thesis]{supervisor}
+\end{filecontents*}
+
+
+\begin{filecontents*}{french-thesis.lbx}
+\ProvidesFile{french-thesis.lbx}[2014/06/14 english for thesis]
+\InheritBibliographyExtras{french}
+\NewBibliographyString{supervision,jointsupervision}
+\DeclareBibliographyStrings{%
+inherit           = {french},
+supervision       = {{dirigée par}{dir\adddotspace }},
+jointsupervision  = {{codirigée par}{codir\adddotspace }},
+}
+\end{filecontents*}
+
+\DeclareLanguageMapping{french}{french-thesis}
+
+\newbibmacro*{thesissupervisor}{%
+  \ifnameundef{supervisor}{}{%
+    \ifnumgreater{\value{supervisor}}{1}
+      {\bibstring{jointsupervision}}
+      {\bibstring{supervision}}
+    \printnames{supervisor}}}
+
+\xpatchbibdriver{thesis}
+  {\printfield{type}}
+  {\printfield{type}
+   \newunit
+   \usebibmacro{thesissupervisor}}
+  {\typeout{yep}}
+  {\typeout{no}}
+  
+% https://tex.stackexchange.com/a/184878 ajout direction thèse
+
+
+
+
+
+\AtBeginSection[]
+{\begin{frame}
+ \frametitle{}  
+ \tableofcontents[currentsection,
+                  hideothersubsections,
+                  subsubsectionstyle=show/show/show/hide
+                   ]
+ \end{frame} 
+ }
+
+
+
+\setbeamertemplate{sections/subsections in toc}[square]
+\setbeamertemplate{bibliography item}[sqare]
+\setbeamertemplate{itemize item}[square]
+\setbeamertemplate{enumerate item}[square]
+\setbeamertemplate{itemize subitem}[square]
+
+
+
+
+
+\renewcommand*{\dotFFN}{}
+\newcommand{\astfootnote}[1]{%
+\let\oldthefootnote=\thefootnote%
+\setcounter{footnote}{0}%
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}%
+\footnote{#1}%
+\let\thefootnote=\oldthefootnote%
+}
+
+
+
+
+
+
+
+
+\begin{document}
+\maketitle
+
+
+
+\section{Plan de la séance}
+
+
+\begin{frame}
+\begin{itemize}
+\item Une partie de présentation technique, méthodologique et philologique
+\item Une partie de présentation de l'interface
+\item Une partie de travaux pratiques avec entraînement d'un modèle
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}{lxml et la non-récursivité}
+\begin{itemize}
+\item Le traitement des données XML via python ne suit pas la logique d'imbrication du XML
+\item Il y aura donc des cas où python ne sera pas adapté (en général, tout ce qui a trait à la production d'éditions et à la transformation complexe de sources XML)
+\item Python sera bien adapté au traitement complexe de documents XML qui nécessitent l'utilisation de listes, dictionnaires
+\item De même, l'intérêt principal de Python est la possibilité d'utiliser des librairies et outils externes de traitement (traitement de l'image, TAL).
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Les espaces de nom}
+\begin{itemize}
+\item 
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}{Parser l'arbre XML}
+\begin{itemize}
+\item La méthode `parse()`
+\item Dans le cas d'inclusions, on doit explicitement demander à ce que les sources externes soient aussi parsées
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Naviguer dans l'arbre}
+\begin{itemize}
+\item 
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Créer un élément}
+\begin{itemize}
+\item 
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Créer un attribut}
+\begin{itemize}
+\item 
+\end{itemize}
+\end{frame}
+
+
+
+
+
+%\begin{frame}
+%\frametitle{Plan} % Table of contents slide, comment this block out to remove it
+%\tableofcontents % Throughout your presentation, if you choose to use \section{} and \subsection{} commands, these will automatically be printed on this slide as an overview of your presentation
+%\end{frame}
+
+
+
+\begin{frame}[allowframebreaks]{Références}
+\printbibliography[keyword=dataset, title={Jeux de données}]
+\hrule
+\printbibliography[notkeyword=dataset, title={Sources secondaires}]
+\end{frame}
+
+\end{document}

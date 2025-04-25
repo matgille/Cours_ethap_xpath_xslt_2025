@@ -25,9 +25,16 @@ Dans chaque dossier, vous trouverez  :
 ---
 ---
 
+## XPath
+**Objectif général :**  
+Comprendre les principes de navigation dans l'arbre XML. Utiliser les fonctions basiques de XPath.
+
 ##  Python  
 **Objectif général :**  
 Comprendre l'utilisation de la librairie python-lxml. Identifier les cas où python est plus efficace pour le traitement de sources XML que les autres langages.  
+
+Nous utiliserons un ensemble de carnets jupyter, via binder: 
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ArianePinche/Biblissima-_scripts_mss.git/HEAD)
 
 ## XSLT
 

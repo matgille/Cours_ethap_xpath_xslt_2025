@@ -15,7 +15,7 @@
 \usepackage[french]{babel}
 \date[2 octobre 2023]{2 octobre 2023}
 \author[Matthias \textsc{Gille Levenson}]{\\~\\ Matthias \textsc{Gille Levenson}\\   {\scriptsize AMU -- CIHAM UMR 5648}\\ {\tiny prénom [point] gille [point] levenson [at] ens-lyon.fr}\vspace{-1cm}}
-\title[Transcription automatisée et HTR]{Python pour le traitement des sources XML}
+\title[Transcription automatisée et HTR]{Rapide retour sur XPath}
 \titlegraphic{\includegraphics[scale=0.23]{/home/mgl/Bureau/Travail/admin/logos/logo-ciham.png}}
 
 
@@ -115,70 +115,33 @@ jointsupervision  = {{codirigée par}{codir\adddotspace }},
 
 
 
-\section{Plan de la séance}
-
-
-\begin{frame}
+\begin{frame}{Espaces de noms et préfixes}
 \begin{itemize}
-\item Une partie de présentation technique, méthodologique et philologique
-\item Une partie de présentation de l'interface
-\item Une partie de travaux pratiques avec entraînement d'un modèle
+\item 
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Le document XML comme un arbre}
+\begin{itemize}
+\item
 \end{itemize}
 \end{frame}
 
 
-\begin{frame}{lxml et la non-récursivité}
+\begin{frame}{Les axes XPath}
 \begin{itemize}
-\item Le traitement des données XML via python ne suit pas la logique d'imbrication du XML
-\item Il y aura donc des cas où python ne sera pas adapté (en général, tout ce qui a trait à la production d'éditions et à la transformation complexe de sources XML)
-\item Python sera bien adapté au traitement complexe de documents XML qui nécessitent l'utilisation de listes, dictionnaires
-\item De même, l'intérêt principal de Python est la possibilité d'utiliser des librairies et outils externes de traitement (traitement de l'image, TAL).
+\item 
 \end{itemize}
 \end{frame}
 
-
-
-\begin{frame}{Limites de lxml}
-\begin{itemize}
-\item Limité à XPath 1.0, compensé par la puissance de python
-\end{itemize}
-\end{frame}
-
-\begin{frame}{Les espaces de nom}
+\begin{frame}{Expressions conditionnelles ou prédicats}
 \begin{itemize}
 \item 
 \end{itemize}
 \end{frame}
 
 
-\begin{frame}{Parser l'arbre XML}
-\begin{itemize}
-\item La méthode `parse()`
-\item Dans le cas d'inclusions, on doit explicitement demander à ce que les sources externes soient aussi parsées
-\end{itemize}
-\end{frame}
-
-\begin{frame}{Naviguer dans l'arbre}
-\begin{itemize}
-\item 
-\end{itemize}
-\end{frame}
-
-
-\begin{frame}{Récupérer les noeuds textuels}
-% https://stackoverflow.com/a/53196856
-\begin{itemize}
-\item 
-\end{itemize}
-\end{frame}
-
-\begin{frame}{Créer un élément}
-\begin{itemize}
-\item 
-\end{itemize}
-\end{frame}
-
-\begin{frame}{Créer un attribut}
+\begin{frame}{Fonctions basiques}
 \begin{itemize}
 \item 
 \end{itemize}
@@ -186,7 +149,24 @@ jointsupervision  = {{codirigée par}{codir\adddotspace }},
 
 
 
+\begin{frame}{Exercice 1}
+% Reprendre https://github.com/gabays/Cours_COSME_2019/blob/master/Xpath_FondamentauxXSLT/Xpath_FondamentauxXSLT.md
+\begin{itemize}
+\item 
+\end{itemize}
+\end{frame}
 
+\begin{frame}{Exercice 2}
+\begin{itemize}
+\item 
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Exercice 3}
+\begin{itemize}
+\item 
+\end{itemize}
+\end{frame}
 
 %\begin{frame}
 %\frametitle{Plan} % Table of contents slide, comment this block out to remove it

@@ -1,17 +1,17 @@
 # Fdb version 4
-["biber diapos"] 1745589775 "diapos.bcf" "diapos.bbl" "diapos" 1745589775 0
+["biber diapos"] 1745584549 "diapos.bcf" "diapos.bbl" "diapos" 1745584549 0
   "biblio.bib" 0 -1 0 ""
-  "diapos.bcf" 1745589775 108345 84e11ad028b335976bc7f88b395da115 "xelatex"
+  "diapos.bcf" 1745584548 108345 84e11ad028b335976bc7f88b395da115 "xelatex"
   (generated)
   "diapos.bbl"
   "diapos.blg"
   (rewritten before read)
-["xdvipdfmx"] 1745589775 "diapos.xdv" "diapos.pdf" "diapos" 1745589775 0
-  "diapos.xdv" 1745589775 65952 c7be292afb5f0f1db863dfc19f590823 "xelatex"
+["xdvipdfmx"] 1745584549 "diapos.xdv" "diapos.pdf" "diapos" 1745584549 0
+  "diapos.xdv" 1745584548 47564 3d1ba54bff1ae78c89de24da1a7f59ba "xelatex"
   (generated)
   "diapos.pdf"
   (rewritten before read)
-["xelatex"] 1745589773 "diapos.tex" "diapos.xdv" "diapos" 1745589775 0
+["xelatex"] 1745584546 "diapos.tex" "diapos.xdv" "diapos" 1745584549 0
   "/home/mgl/Bureau/Travail/admin/logos/logo-ciham.png" 1697364781 22502 7ffcad3839db2036675c482eb8261bdb ""
   "/usr/local/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/adobe/zapfding/pzdr.tfm" 1136768653 1528 f853c4d1b4e0550255e02831fdc8496f ""
@@ -304,15 +304,15 @@
   "/usr/local/texlive/2023/texmf-dist/web2c/texmf.cnf" 1681165822 40967 d940221f8762fd5848760382d97d1226 ""
   "/usr/local/texlive/2023/texmf-var/web2c/xetex/xelatex.fmt" 1684173637 10508480 ca0d87b9cb11f973713bb5de6749bbf1 ""
   "/usr/local/texlive/2023/texmf.cnf" 1687017755 474 5c5a480b7e7204481e07c168f17fecb5 ""
-  "diapos.aux" 1745589775 3259 9a74cee3f295e55512fd100a4806fdd4 "xelatex"
+  "diapos.aux" 1745584548 2582 3734add0c1488ad5cc841d6e6344813e "xelatex"
   "diapos.bbl" 0 -1 0 "biber diapos"
-  "diapos.nav" 1745589775 1462 91c3e9ab6edcb8d4eec7c1b7b63f10ce "xelatex"
-  "diapos.out" 1745589775 140 1a6868de0df436b3938e0496c246a8f3 "xelatex"
-  "diapos.run.xml" 1745589775 2419 df33d86bf24cb04a013558b0102aebf7 "xelatex"
-  "diapos.tex" 1745589654 5505 87d25a8f38c09dc5e79b355a60f0b8bc ""
-  "diapos.toc" 1745589775 83 40d8c92ef3d3e3117e772769e16d063f "xelatex"
-  "french-thesis.lbx" 1745589769 330 3b35c33a87cb5d4db416726e25cf91e8 ""
-  "thesis.dbx" 1745589769 187 988585ad0e11cbfd18643577d361bb2a ""
+  "diapos.nav" 1745584548 1091 31f45c127b9b303a5e1d8b3c25b3313e "xelatex"
+  "diapos.out" 1745584548 140 1a6868de0df436b3938e0496c246a8f3 "xelatex"
+  "diapos.run.xml" 1745584548 2419 df33d86bf24cb04a013558b0102aebf7 "xelatex"
+  "diapos.tex" 1745584545 4919 2d9ceeabb0575b7dc18f8757e1726a9b ""
+  "diapos.toc" 1745584548 83 40d8c92ef3d3e3117e772769e16d063f "xelatex"
+  "french-thesis.lbx" 1745584101 330 3b35c33a87cb5d4db416726e25cf91e8 ""
+  "thesis.dbx" 1745584101 187 988585ad0e11cbfd18643577d361bb2a ""
   (generated)
   "diapos.aux"
   "diapos.bcf"

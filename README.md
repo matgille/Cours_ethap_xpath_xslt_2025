@@ -31,9 +31,17 @@ Comprendre l'utilisation de la librairie python-lxml. Identifier les cas où pyt
 
 ## XSLT
 
-### Session 1 : Introduction à XSLT, fonctionnement par défaut et XPath  
+### Session 1 : Introduction à XSLT
 **Objectif général :**  
-Comprendre le rôle de XSLT dans la transformation de documents XML, explorer le fonctionnement par défaut du moteur de transformation, et acquérir les bases de l’expression XPath.
+Comprendre le rôle de XSLT dans la transformation de documents XML, explorer le fonctionnement par défaut du moteur de transformation, et apprendre quelques fonctions de base.
+
+### Session 2 : Approfondissement de XSLT, les options de xml:templates, les conditions et les boucles
+**Objectif général :**  
+Apprendre à manipuler XSLT pour proposer des transformations complexes.
+
+### Session 3 : Mise en pratique : modifier une structure XML, manipuler une collection de fichiers
+**Objectif général :**  
+Mettre en pratiques les notions vues lors des sessions 1 et 2, apprendre quelques astuces de transformation.
 
 ---
 

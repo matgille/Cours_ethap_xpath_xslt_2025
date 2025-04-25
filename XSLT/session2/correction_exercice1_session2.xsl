@@ -7,36 +7,7 @@
     version="3.0">
    
    <xsl:output method="html" indent="yes" encoding="UTF-8"/>
-    
-    <xsl:template match="TEI">
-        <html>
-        <head>
-            <meta charset="utf-8"/>
-                <title>Titre de la page</title>
-                <link rel="stylesheet" href="style.css"/>
-                    <script src="script.js"></script>
-        </head>
-        <body>
-        <!--<ul>
-        <xsl:apply-templates select="descendant::speaker" mode="list"/>
-        </ul>-->
-        <xsl:apply-templates select="descendant::body"/>
-        </body>
-        </html>
-    </xsl:template>
-   
-  <!-- <xsl:template match="speaker" mode="list">
-          <li><xsl:value-of select="."/></li>
-   </xsl:template>-->
-<!--   
-   
-   <?xml version="1.0" encoding="UTF-8"?>
-    <xsl:stylesheet version="3.0"
-        xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-        xpath-default-namespace="http://www.tei-c.org/ns/1.0">
-        
-        <xsl:output method="html" indent="yes" encoding="UTF-8"/> -->
-        
+            
         <!-- Template racine -->
         <xsl:template match="/">
             <html>

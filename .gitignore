@@ -10,6 +10,8 @@
 *.nav
 *.out
 *.snm
+*.fls
+XPath/diapos/*.tex
 *.xdv
 *.run.xml
-*.latexmk
+*latexmk

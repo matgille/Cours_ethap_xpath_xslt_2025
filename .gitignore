@@ -1,2 +1,16 @@
 .DS_Store
 .ipynb_checkpoints/
+*.bbl
+*.blg
+*.bcf
+*.dvi 
+*.log
+*run.xml
+*.toc
+*.aux
+*.nav
+*.out
+*.snm
+*.xdv
+*.run.xml
+*.latexmk

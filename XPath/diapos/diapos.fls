@@ -1,4 +1,4 @@
-PWD /home/mgl/Bureau/Travail/Cours_et_formations/Biblissima-_scripts_mss/Python/Session_1
+PWD /home/mgl/Bureau/Travail/Cours_et_formations/Biblissima-_scripts_mss/XPath/diapos
 INPUT /usr/local/texlive/2023/texmf.cnf
 INPUT /usr/local/texlive/2023/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2023/texmf-var/web2c/xetex/xelatex.fmt
@@ -858,9 +858,9 @@ INPUT /home/mgl/Bureau/Travail/admin/logos/logo-ciham.png
 INPUT /home/mgl/Bureau/Travail/admin/logos/logo-ciham.png
 INPUT /home/mgl/Bureau/Travail/admin/logos/logo-ciham.png
 OUTPUT diapos.xdv
-INPUT ./diapos.toc
-INPUT diapos.toc
-INPUT diapos.toc
+INPUT ./img/andromaque.png
+INPUT ./img/andromaque.png
+INPUT img/andromaque.png
 OUTPUT diapos.nav
 OUTPUT diapos.toc
 OUTPUT diapos.snm

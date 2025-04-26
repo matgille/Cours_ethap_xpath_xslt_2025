@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.5.15)  25 APR 2025 14:35
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.5.15)  26 APR 2025 16:19
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1771,11 +1771,20 @@ p)
 </home/mgl/Bureau/Travail/admin/logos/logo-ciham.png>
  [1
 
-] (./diapos.toc) [2
+] [2
 
-] [3
+]
+Overfull \hbox (2.46579pt too wide) in paragraph at lines 129--129
+\TU/lmtt/m/n/10.95 /Bureau/Travail/Cours_et_formations/Biblissima-_scripts_mss/
+XPath/diapos 
+ []
 
-] [4
+[3
+
+]
+File: img/andromaque.png Graphic file (type bmp)
+<img/andromaque.png>
+ [4
 
 ] [5
 
@@ -1783,17 +1792,30 @@ p)
 
 ] [7
 
+] [8
+
+] [9
+
+] [10
+
+] [11
+
+] [12
+
+] [13
+
+] [14
+
+] [15
+
+] [16
+
+] [17
+
+] [18
+
 ]
-
-Package biblatex Warning: Keyword 'dataset' not found on input line 173.
-
-
-LaTeX Warning: Empty bibliography on input line 173.
-
-
-LaTeX Warning: Empty bibliography on input line 173.
-
-[8
+[19
 
 ]
 \tf@nav=\write7
@@ -1807,18 +1829,18 @@ LaTeX Warning: Empty bibliography on input line 173.
 
  (./diapos.aux)
 Package rerunfilecheck Info: File `diapos.out' has not changed.
-(rerunfilecheck)             Checksum: 1A6868DE0DF436B3938E0496C246A8F3;140.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 Package logreq Info: Writing requests to 'diapos.run.xml'.
 \openout1 = `diapos.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 51013 strings out of 476709
- 1227246 string characters out of 5804145
- 2150913 words of memory out of 5000000
- 70360 multiletter control sequences out of 15000+600000
- 512807 words of font info for 53 fonts, out of 8000000 for 9000
+ 51045 strings out of 476709
+ 1227670 string characters out of 5804145
+ 2151063 words of memory out of 5000000
+ 70384 multiletter control sequences out of 15000+600000
+ 512855 words of font info for 59 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 128i,15n,122p,869b,4053s stack positions out of 10000i,1000n,20000p,10000000b,200000s
+ 128i,15n,122p,869b,3931s stack positions out of 10000i,1000n,20000p,10000000b,200000s
 
-Output written on diapos.xdv (8 pages, 47564 bytes).
+Output written on diapos.xdv (19 pages, 131768 bytes).

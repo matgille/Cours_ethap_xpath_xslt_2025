@@ -5,7 +5,6 @@
 *.bcf
 *.dvi 
 *.log
-*run.xml
 *.toc
 *.aux
 *.nav

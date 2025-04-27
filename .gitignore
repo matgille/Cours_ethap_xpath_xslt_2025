@@ -15,3 +15,5 @@ XPath/diapos/*.tex
 *.xdv
 *.run.xml
 *latexmk
+MS609_tei_examples/
+

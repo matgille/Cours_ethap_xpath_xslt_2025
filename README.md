@@ -33,6 +33,8 @@ Une première séance consacrée à XPath ouvrira la formation
 - Comprendre les principes de navigation dans l'arbre XML. 
 - Utiliser les fonctions basiques de XPath.
 
+---
+
 ###  Python  
 **Objectif général :**  
 - Avoir les bases du langage python
@@ -42,8 +44,9 @@ Une première séance consacrée à XPath ouvrira la formation
 Nous utiliserons un ensemble de carnets jupyter, via binder: 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ArianePinche/Biblissima-_scripts_mss.git/HEAD)
 
-### XSLT
+---
 
+### XSLT
 #### Session 1 : Introduction à XSLT
 **Objectif général :**  
 Comprendre le rôle de XSLT dans la transformation de documents XML, explorer le fonctionnement par défaut du moteur de transformation, et apprendre quelques fonctions de base.

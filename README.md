@@ -1,5 +1,5 @@
 # Scripts et manuscrits — Python, XSLT, XQuery  
-**Formation proposée par Biblissima+**
+**Formation proposée par Biblissima+** - [![DOI](https://zenodo.org/badge/960449126.svg)](https://doi.org/10.5281/zenodo.15386708)
 
 🔗 [Accéder au site de la formation](https://scriptsmss.sciencesconf.org)
 

@@ -1,4 +1,4 @@
-# Scripts et manuscrits — XPATH, XSLT  
+# EThAP — XPATH, XSLT  
 
 Ce dépôt contient des supports de cours sur XPATH et XSLT pour la formation ETHAP 2025. Les cours ont été originellement produits pour la formation Script/Mss 2025. Ils ont été écrits par Matthias Gille Levenson (Xpath) et Ariane Pinche (XSLT).
 

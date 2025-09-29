@@ -1,3 +1,0 @@
-\begin{Verbatim}[commandchars=\\\{\}]
-\PYG{n+nf}{substring\PYGZhy{}after}\PYG{p}{(}\PYG{n+nt}{text}\PYG{p}{,}\PYG{+w}{ }\PYG{n+nt}{string}\PYG{p}{)}
-\end{Verbatim}

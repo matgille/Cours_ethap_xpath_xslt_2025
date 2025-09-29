@@ -1,3 +1,0 @@
-\begin{Verbatim}[commandchars=\\\{\}]
-\PYG{k}{preceding\PYGZhy{}sibling}\PYG{p}{::}\PYG{n+nf}{node}\PYG{p}{()[}\PYG{k}{self}\PYG{p}{::}\PYG{n+nt}{tei:w}\PYG{+w}{ }\PYG{o+ow}{and}\PYG{+w}{ }\PYG{n+nf}{position}\PYG{p}{()}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m+mi}{1}\PYG{p}{]}
-\end{Verbatim}

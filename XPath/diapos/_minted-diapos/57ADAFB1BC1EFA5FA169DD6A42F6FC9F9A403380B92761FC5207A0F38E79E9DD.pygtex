@@ -1,3 +1,0 @@
-\begin{Verbatim}[commandchars=\\\{\}]
-\PYG{n+nf}{contains}\PYG{p}{(}\PYG{n+nt}{string\PYGZus{}a}\PYG{p}{,}\PYG{+w}{ }\PYG{n+nt}{string\PYGZus{}b}\PYG{p}{)}
-\end{Verbatim}

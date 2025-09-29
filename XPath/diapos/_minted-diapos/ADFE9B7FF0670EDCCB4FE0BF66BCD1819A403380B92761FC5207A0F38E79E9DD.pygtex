@@ -1,0 +1,3 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n+nf}{replace}\PYG{p}{(}\PYG{n+nt}{text}\PYG{p}{,}\PYG{+w}{ }\PYG{n+nt}{str}\PYG{p}{,}\PYG{+w}{ }\PYG{n+nt}{repl}\PYG{p}{)}
+\end{Verbatim}
